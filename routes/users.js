@@ -19,6 +19,7 @@ var transporter = nodemailer.createTransport({
 
 // Register
 router.post('/register', (req, res, next) => {
+  console.log(req.body);
   User.checkUserExist(req.body,(isTrue)=>{
     console.log(isTrue);
 

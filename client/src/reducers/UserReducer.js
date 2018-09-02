@@ -20,7 +20,7 @@ switch (action.type) {
     }
     break;
 case REGISTER_USER:
-console.log("register called");
+console.log(action.payload.msg);
 return{...state}
   default:
   return{...state}

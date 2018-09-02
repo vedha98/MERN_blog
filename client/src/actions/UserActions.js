@@ -6,7 +6,7 @@ export const LoginUser = (user)=> dispatch =>{
   console.log(user);
 
 axios
-.post('/users/authenticate',JSON.stringify(user))
+.post('/users/authenticate',user)
 .then(res=>
   dispatch({
     type:LOGIN_USER,payload:res.data
@@ -14,13 +14,11 @@ axios
 )
 }
 export const RegisterUser = (user)=> dispatch =>{
-  console.log(user);
-
 axios
-.post('/users/authenticate',JSON.stringify(user))
+.post('/users/register',user)
 .then(res=>
   dispatch({
-    type:LOGIN_USER,payload:res.data
+    type:REGISTER_USER,payload:res.data
   })
 )
 }
