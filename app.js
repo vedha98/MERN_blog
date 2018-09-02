@@ -20,7 +20,7 @@ mongoose.connection.on('error',(err)=>{
 const app = express();
 const users = require('./routes/users');
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 
 
 app.use(cors());
@@ -45,5 +45,5 @@ app.get("*",(req,res)=>{
 
 
 app.listen(port,()=>{
-  console.log("running on port 3000");
+  console.log("running on port 5000");
 });
