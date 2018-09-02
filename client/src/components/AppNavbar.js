@@ -30,7 +30,7 @@ toggle = ()=>{
   <Nav className="ml-auto" navbar>
   <NavLink href="/register" >Register
   </NavLink>
-  <NavLink href="https://github.com/vedha98" >Login
+  <NavLink href="/Login" >Login
   </NavLink>
   </Nav>
   </Collapse>
