@@ -1,1 +1,1 @@
-# MERN_blog
+# mean-boiler
